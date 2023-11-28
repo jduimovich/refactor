@@ -7,21 +7,21 @@ metadata:
     tad.gitops.set/replicas: ".spec.replicas"
     tad.gitops.get/replicas: ".spec.replicas" 
   labels: 
-    app.kubernetes.io/instance: c11
+    app.kubernetes.io/instance: c12
     app.kubernetes.io/managed-by: kustomize
-    app.kubernetes.io/name:  c11
+    app.kubernetes.io/name:  c12
     app.kubernetes.io/part-of: refactor  
-  name: c11
+  name: c12
   namespace: refactor
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/instance:  c11 
+      app.kubernetes.io/instance:  c12 
   template:
     metadata: 
       labels:
-        app.kubernetes.io/instance:  c11
+        app.kubernetes.io/instance:  c12
     spec:
       containers:
       - image: quay.io/jduimovich0/bootstrap
